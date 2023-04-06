@@ -11,11 +11,11 @@ public class Market {
         this.name = name;
     }
 
-    public void addBuyerInMarket(Buyer buyer) {
+    public void addBuyerToMarket(Buyer buyer) {
         actors.add(buyer);
     }
 
-    public void removeBuyerFromMaarket(Buyer buyer) {
+    public void removeBuyerFromMarket(Buyer buyer) {
         actors.remove(buyer);
     }
 }
