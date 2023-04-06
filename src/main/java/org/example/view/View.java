@@ -31,5 +31,17 @@ public class View {
         System.out.println(queueService.getFirstBuyer().getName() + " покинул(a) очередь");
         queueService.removeBuyerFromQueue();
     }
+
+    public void makeOrder() {
+        queueService.buyerMakeOrder();
+        System.out.println(queueService.getFirstBuyer().getName() + " сделал(а) заказ");
+    }
+
+    public void takeOrder() {
+        queueService.buyerTakeOrder();
+        System.out.println(queueService.getFirstBuyer().getName() + " получил(а) заказ");
+        releaseFromQueue();
+    }
+
 }
 

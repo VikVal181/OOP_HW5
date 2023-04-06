@@ -19,7 +19,16 @@ public class QueueService {
     }
 
     public void removeBuyerFromQueue() {
-
         queue.removeBuyerFromQueue();
     }
+
+    public void buyerMakeOrder() {
+        getFirstBuyer().setMakeOrder(true);
+    }
+
+    public void buyerTakeOrder() {
+        getFirstBuyer().setTakeOrder(true);
+        getFirstBuyer().setMakeOrder(false);
+    }
+
 }
